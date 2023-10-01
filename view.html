@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENGENAL TUNA</title>
+    <link rel="stylesheet" href="style_saya.css">
+</head>
+<body onload = "JavaScript:AutoRefresh(50000);" >
+    <div class="modal-window" id="buka-modal">
+        <div>
+            <a href="#tutup-modal" class="modal-close">
+                Tutup &times;
+            </a>
+            <input type="text" placeholder="Cari..." />
+        </div>
+    </div>
+    <div class="header">
+ <!--       <div class="title">
+                <div class="slideshow-container"> -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1/6</div>
+                        <iframe 
+                            src="http://103.183.74.46:3000/public/dashboard/0f79e3f6-58f8-4867-8480-f4f0bbe6ac07" 
+                            frameborder="0" 
+                            height="700px" 
+                            width="100%" 
+                        ></iframe>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2/6</div>
+                        <iframe  src="http://103.183.74.46:3000/public/dashboard/6d9ccd7a-e019-458a-a035-ba0a8fc72722" 
+                        frameborder="0" 
+                        height="700px" 
+                        width="100%" 
+                        ></iframe>
+                    </div>
+                    <div class="mySlides fade">
+                         <div class="numbertext"> 4/6</div>    
+                            <iframe src="http://103.183.74.46:3000/public/dashboard/69a1c0b9-4d5a-469c-adcc-5c2786481085"
+                             frameborder="0"
+                             width="100%"
+                             height="700px"
+                             ></iframe>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 5/6</div>
+                        <iframe src="http://103.183.74.46:3000/public/dashboard/3a6c95d1-9a3a-4e0c-9b8f-09073f771a6b" 
+                        frameborder="0"
+                        width="100%"
+                        height="700px"
+                        ></iframe>
+                    </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    
+        <script>
+            let slideIndex = 0;
+            showSlides();
+    
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+
+        <script type = "text/JavaScript">
+        <!--
+            function AutoRefresh( t ) {
+              setTimeout("location.reload(true);", t);
+            }
+        //-->
+    </script>
+</body>
+
+</html>
+
+                           
